@@ -23,7 +23,7 @@ export default function AutoCompleteSearch(){
      setFilteredUsers([]);
     }
 
-    function handleChange(e : Event){
+    function handleChange(e : React.ChangeEvent<HTMLInputElement>){
         const query: string = (e.target as HTMLInputElement).value.toLowerCase();
         setParams(query);
         if(query.length > 1){

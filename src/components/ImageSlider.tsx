@@ -17,7 +17,7 @@ interface ImageSliderProps {
 export default function ImageSlider({url, limit, page }: ImageSliderProps){
 
     const [images, setImages] = useState<ImageItem[]>([])
-    const [error, setError] = useState<null>(null)
+    const [error, setError] = useState<string | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
     const [imageIndex , setImageIndex ] = useState<number>(0)
 
@@ -43,7 +43,7 @@ export default function ImageSlider({url, limit, page }: ImageSliderProps){
                 console.log(data);
                 setLoading(false);
             }
-        }catch(e : unknown){
+        }catch(e){
             if (e instanceof Error){
                 setError(e.message );
             }else{
