@@ -33,7 +33,7 @@ export default function ProgressBar({url} : ProgressBarProps){
                 console.log(data)
             }
         }catch(e){
-            setError(e.message);
+            setError((e as Error).message);
             setLoading(false);
         }
     }

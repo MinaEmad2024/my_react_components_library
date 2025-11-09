@@ -9,7 +9,6 @@ export default function DarkMode(){
 
     function handleToggleTheme( ){
         setTheme(theme === 'light'? 'dark' : 'light');
-            console.log(setTheme);       
 }
 
     return (

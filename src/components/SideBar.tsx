@@ -1,4 +1,3 @@
-import path from "path";
 import { Link } from "react-router-dom"
 
 export default function SideBar(){

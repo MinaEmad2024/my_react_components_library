@@ -19,7 +19,7 @@ interface Product {
 
 export default function InfiniteLoad(){
     const [loading, setLoading ] = useState<boolean>(false);
-    const [error , setError ] = useState<null>(null);
+    const [error , setError ] = useState<string |null>(null);
     const [products , setProducts ] =  useState<ProductItem[]>([]);
     const [moreProducts , setMoreProducts ] = useState<boolean>(false);
     const [count , setCount ] = useState<number>(0)
@@ -42,9 +42,13 @@ export default function InfiniteLoad(){
             }
         
         }catch(e){
-            setError(e.message)
-            setLoading(false)
-        
+            if (e instanceof Error) {
+                setError(e.message)
+                setLoading(false)
+        } else {
+            // Handle cases where a non-Error was thrown
+            setError('An unknown error occurred'); 
+        }
         }
     }
 

@@ -23,8 +23,8 @@ export default function AutoCompleteSearch(){
      setFilteredUsers([]);
     }
 
-    function handleChange(e){
-        const query: string = e.target.value.toLowerCase();
+    function handleChange(e : Event){
+        const query: string = (e.target as HTMLInputElement).value.toLowerCase();
         setParams(query);
         if(query.length > 1){
             const filteredData  = 
@@ -60,7 +60,7 @@ export default function AutoCompleteSearch(){
                 // console.log(users);
             }
         }catch(e){
-            setError(e.message);
+            setError((e as Error).message);
             setLoading(false);
         }
     }
