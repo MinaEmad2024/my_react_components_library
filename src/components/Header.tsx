@@ -14,7 +14,7 @@ export default function Header(){
         </div>
         <h1 className="pl-10">Mina Emad React Components PlayBook </h1>
         <div className="absolute right-10 top-5 mt-2 h-10 w-10">
-            <a href=""><PiGithubLogoFill /></a>
+            <a href="https://github.com/MinaEmad2024/my_react_components_library"><PiGithubLogoFill /></a>
         </div>
         <div className="absolute right-23 top-5 mt-1 h-10 w-10">
             GitHub 
