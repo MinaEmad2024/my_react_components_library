@@ -1,0 +1,158 @@
+
+
+.active {
+    color: gold;
+}
+
+.inactive {
+    color: black;
+}
+
+.image-slider-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+}
+
+.slider-image{
+    border-radius: .5 rem;
+    box-shadow: 0px 0px 7px #666;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-arrow{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    filter: drop-shadow(0px, 0px, 5px ,#555);
+}
+
+.slider-arrow-left{
+    left: 1rem;
+}
+
+.slider-arrow-right{
+    right: 1rem;
+}
+
+.slider-indicator{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    padding: 0px;
+}
+.slider-image-button{
+
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 0 0.5rem;
+    cursor: pointer;   
+}
+
+.slider-hide{
+    display: none;
+}
+
+.update-image-button{
+    background-color: gray;
+}
+
+.infinie-load-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+.infinite-load-products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+}
+
+.infinte-load-product{
+    padding: 20px;
+    border:1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infinte-load-product img{
+    width: 200px;
+    height: 200px;
+}
+
+.infinite-load-button{
+    border: 2px solid black;
+    border-radius: 2%;
+    background-color: gray;
+    width: 500px;
+    height: 20px;
+    margin-left: 400px;
+    padding-left: 200px;
+    padding-bottom: 30px;
+}
+
+.acc-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.acc-wrapper h1{
+    background: #597cdd;
+    color: #fff;
+    padding: 5px;
+    border-radius: 0.5rem;
+
+}
+.acc-wrapper button {
+    padding: 10px 20px;
+    background: #597cdd;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-bottom: 5px;
+}
+
+.accordian {
+  width: 500px;
+}
+
+.acc-item {
+  background: #597cdd;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+}
+
+.acc-title {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.acc-title span{
+    padding: 0px;
+}
+
+.acc-content {
+  color: #ffffff;
+  height: auto;
+}
